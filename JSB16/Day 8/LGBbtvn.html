@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        th,td{
+            width: 100px;
+            text-align: center;
+        }
+        caption{
+            text-align: left;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            width: 700px;
+        }
+        input{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bài 1 -->
+    <h1>THỜI KHÓA BIỂU</h1>
+    <table border="1" >
+        <caption><b>BUỔI SÁNG:</b></caption>
+        <tr>
+            <th>THỜI GIAN</th>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+            <th>Thứ 7</th>
+        </tr>
+
+        <tr>
+            <td>7h30-8h15</td>
+            <td>Chào cờ</td>
+            <td>Sinh học</td>
+            <td>Văn</td>
+            <td>Tin</td>
+            <td>Ngoại ngữ</td>
+            <td>GDQP</td>
+        </tr>
+
+        <tr>
+            <td>8h25-9h10</td>
+            <td>Toán</td>
+            <td>GDCD</td>
+            <td>Văn</td>
+            <td>Tin</td>
+            <td>Ngoại ngữ</td>
+            <td>Địa lí</td>
+        </tr>
+
+        <tr>
+            <td>9h20-10h05</td>
+            <td>Toán</td>
+            <td>Toán</td>
+            <td>Hóa học</td>
+            <td>Văn</td>
+            <td>Văn</td>
+            <td>Toán</td>
+        </tr>
+
+        <tr>
+            <td>10h15-11h00</td>
+            <td>Hóa học</td>
+            <td>Toán</td>
+            <td></td>
+            <td>Lịch sử</td>
+            <td>Vật lí</td>
+            <td>Toán</td>
+        </tr>
+
+        <tr>
+            <td>11h10-11h55</td>
+            <td>Sinh học</td>
+            <td>Ngoại ngữ</td>
+            <td></td>
+            <td>Lịch sử</td>
+            <td>Vật lí</td>
+            <td>Công nghệ</td>
+        </tr>
+
+    </table>
+
+    <table border="1">
+        <caption><b>BUỔI CHIỀU:</b></caption>
+        <tr>
+            <th>THỜI GIAN</th>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+            <th>Thứ 7</th>
+        </tr>
+        
+        <tr>
+            <td>13h45-14h30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>14h40-15h25</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>15h35-16h20</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Thể dục</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>16h30-17h15</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Thể dục</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <!-- Bài 2: -->
+    <form action="" method="post" name="myForm" >
+        Name: <input type="text" name="name">
+        <br>
+        E-mail: <input type="text" name="mail" >
+        <br>
+        Website: <input type="text" name="web">
+        <br>
+        Comment: <input type="text" name="cmt" style="height: 80px; width:250px;">
+        <br>
+        Gender:
+        <input type="radio" name="g"> Female
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Other
+        <br>
+        <button onclick="user()">Submit</button>
+    </form>
+
+    <!-- Em kbt làm ý b -->
+
+    <script src="LGBbtvn.js"></script>
+</body>
+</html>

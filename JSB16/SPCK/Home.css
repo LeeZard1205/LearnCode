@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Berkshire Swash";
+}
+html{
+    scroll-behavior: smooth;
+}
+.thanh_menu{
+    width: 100%;
+    background-color: #2c0047;
+    position: fixed;
+    top: 0;
+}
+.ha,.menu,.mail,.lienhe{
+    display: inline-block;
+}
+.ha{
+    width: 24%;
+    display: inline-flex;
+    justify-content: center;
+    padding:  10px 0px;
+}
+#logo{
+    width: 55px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+}
+li{
+    list-style: none;
+    text-align: center;
+    width: 20%;
+    padding: 18px 0;
+    margin: 10px 5px;
+}
+.menu{
+    width: 50%;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#A1{
+    position: absolute;
+    top: 0;
+}
+li:hover{
+    cursor: pointer;
+    background-color: #530a80b6;
+    text-decoration: underline;
+}
+
+/*  */
+.container1{
+    padding-top: 55px;
+    width: 100%;
+    background-color: #30004e;
+    padding-left: 105px;
+}
+#hallo{
+    width: 635px;
+}
+.gthieu{
+    padding-top: 150px;
+    width: 505px;
+    vertical-align: top;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+a,p,h1,h3{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+h1{
+    font-size: 60px;
+    color: #f7ea66;
+}
+h3,p{
+    color: whitesmoke;
+}
+p{
+    padding: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#explore{
+    color: #5c0096;
+    font-size: 20px;
+}
+button{
+    width: 155px;
+    height: 50px;
+    background-color: #f7ea66;
+    border: none;
+    border-radius: 30px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #fff47e;
+    text-decoration: underline;
+}
+
+/*  */
+.container2{
+    background-color: #2c0047;
+    padding: 20px 75px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+    display: inline-block; 
+    font-size: 24px;
+}
+.title{
+    font-size: 32px;
+    color: #f7ea66;
+    text-align: center;
+}
+.mail{
+    width: 47.5%;
+    vertical-align: top;
+    margin-top: 25px;
+}
+.sub{
+    height: 40px;
+    width: 20%;
+    border-radius: 0 30px 30px 0;
+    color: #5c0096;
+}
+input{
+    height: 40px;
+    width: 77%;
+    border-radius: 30px 0 0 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+/*  */
+#u_oa{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2c0047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}

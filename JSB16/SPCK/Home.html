@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween</title>
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <a href="#d1">
+        <div onclick="welcome()" id="u_oa">
+            <h1><i><b>WELCOME TO HALLOWEEN</b></i></h1>
+        </div>
+    </a>
+
+    <nav class="thanh_menu">
+        <div class="ha">
+            <a id="anh" href="Home.html"><img id="logo" src="http://ingenioushubs.com/Allhallows/images/header-logo.png" alt="logo"></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#d1">Home</a></li>
+                <li><a href="Shop.html">'Shop'</a></li>
+                <li><a href="Services.html">'Services'</a></li>
+                <li><a href="About.html">About Page</a></li>
+                <li><a href="#d2">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div class="ha">
+            <a href="Home.html"><i><b>LOOKUP WIZARD</b></i></a>
+        </div>
+
+    </nav>
+
+    <div id="d1" class="container1">
+        <img id="hallo" src="http://ingenioushubs.com/Allhallows/images/Banner.png" alt="Halloween">
+    
+        <div class="gthieu">
+            <h3>31th October 2022</h3>
+            <h1>Halloween</h1>
+            <p>&emsp;Halloween or Hallowe'en (a contraction of "All Hallows' evening"), less commonly known as Allhalloween, All Hallows' Eve, or All Saints' Eve, is a celebration observed in many countries on 31 October, the eve of the Western Christian feast of All Hallows' Day. It begins the observance of Allhallowtide, the time in the liturgical year dedicated to remembering the dead, including saints (hallows), martyrs, and all the departed.</p>
+            <button><a id="explore" href="https://en.wikipedia.org/wiki/Halloween">Explore More</a></button>
+        </div>
+    </div>
+
+    <div id="d2" class="container2">
+        <div class="lienhe">
+            <h2><i><b>LOOKUP WIZARD</b></i></h2>
+            <div class="info">
+                Address:
+                <br>
+                Phone:
+                <br>
+                Email:
+                <br>
+                Facebook:
+            </div>
+            <div class="info">
+                No. 4, alley 41/3, Tran Duy Hung, Hanoi, Vietnam
+                <br>
+                0886750015
+                <br>
+                nohalloween@gmail.com
+                <br>
+                https://www.facebook.com/halloween
+            </div>
+        </div>
+
+        <div class="mail">
+            <h1 class="title">Signup For Newsletter</h1>
+            <input id="nhap" type="email" placeholder="Your E-Mail Address Here" >
+            <button onclick="thank()" class="sub">Subcribe</button>
+        </div>
+    </div>
+
+    <script>
+        function welcome() {
+            let a = document.getElementById("u_oa")
+            a.style.zIndex = "-1"
+        }
+        function thank() {
+            let b = document.getElementById("nhap")
+            if (b.value == "") {
+                alert("Can't submit with null value.\nPlease try again!")
+            } else {
+                alert("Thanks for signing up.\nYou will be notified every time there is new annoucements about Halloween!")
+                b.value = ""
+            }
+        }
+    </script>
+
+</body>
+</html>

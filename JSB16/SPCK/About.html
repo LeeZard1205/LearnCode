@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Berkshire+Swash"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="About.css" />
+  </head>
+  <body>
+    <nav class="thanh_menu">
+      <div class="ha">
+        <a id="anh" href="Home.html"
+          ><img
+            id="logo"
+            src="http://ingenioushubs.com/Allhallows/images/header-logo.png"
+            alt="logo"
+        /></a>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Shop.html">'Shop'</a></li>
+          <li><a href="Services.html">'Services'</a></li>
+          <li><a href="#A1">About Page</a></li>
+          <li><a href="#d2">Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="ha">
+        <a href="Home.html"
+          ><i><b>LOOKUP WIZARD</b></i></a
+        >
+      </div>
+    </nav>
+    <div id="A1"></div>
+
+    <div class="cover">
+      <div class="img">My picture is too good to be put here</div>
+      <div class="about">
+        <h3>MY INTRO</h3>
+        <h1>About Me</h1>
+        <p>
+          This paragraph is about *notme* yushifcnbdsiuhfjnssda
+          hufojknaehnheradvfbshdjkbcuvisvknjdmhbfkajdvfrsdcs
+          scfdsuhbjvbgzydusjcvf,iyhdnhbuy vidus
+        </p>
+        <div class="info">
+          Name:
+          <br />
+          Date of birth:
+          <br />
+          Address:
+          <br />
+          Email:
+          <br />
+          Phone:
+        </div>
+        <div class="info">
+          Lý Gia Bảo
+          <br />
+          12/12/2005
+          <br />
+          Hanoi, Vietnam
+          <br />
+          none@gmail.com
+          <br />
+          0886750015
+        </div>
+        <br />
+        <button class="ppt">
+          <a
+            class="ppt"
+            href="https://docs.google.com/presentation/d/1Hc8mROpAkupt117WD7_yhqzkiQVVbFb9viV14mcSLJI/edit?usp=sharing"
+            >Explore More</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div id="d2" class="container2">
+      <div class="lienhe">
+        <h2>
+          <i><b>LOOKUP WIZARD</b></i>
+        </h2>
+        <div class="info">
+          Address:
+          <br />
+          Phone:
+          <br />
+          Email:
+          <br />
+          Facebook:
+        </div>
+        <div class="info">
+          No. 4, alley 41/3, Tran Duy Hung, Hanoi, Vietnam
+          <br />
+          0886750015
+          <br />
+          nohalloween@gmail.com
+          <br />
+          https://www.facebook.com/halloween
+        </div>
+      </div>
+
+      <div class="mail">
+        <h1 class="title">Signup For Newsletter</h1>
+        <input id="nhap" type="email" placeholder="Your E-Mail Address Here" />
+        <button onclick="thank()" class="sub">Subcribe</button>
+      </div>
+    </div>
+
+    <script>
+      function welcome() {
+        let a = document.getElementById("u_oa");
+        a.style.zIndex = "-1";
+      }
+      function thank() {
+        let b = document.getElementById("nhap");
+        if (b.value == "") {
+          alert("Can't submit with null value.\nPlease try again!");
+        } else {
+          alert(
+            "Thanks for signing up.\nYou will be notified every time there is new annoucements about Halloween!"
+          );
+          b.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>

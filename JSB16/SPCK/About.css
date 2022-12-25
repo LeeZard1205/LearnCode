@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Berkshire Swash";
+}
+html{
+    scroll-behavior: smooth;
+}
+.thanh_menu{
+    width: 100%;
+    background-color: #2c0047;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+.ha,.menu,.mail,.lienhe{
+    display: inline-block;
+}
+.ha{
+    width: 24%;
+    display: inline-flex;
+    justify-content: center;
+    padding:  10px 0px;
+}
+#logo{
+    width: 55px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+}
+li{
+    list-style: none;
+    text-align: center;
+    width: 20%;
+    padding: 18px 0;
+    margin: 10px 5px;
+}
+.menu{
+    width: 50%;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+button{
+    width: 155px;
+    height: 50px;
+    background-color: #f7ea66;
+    border: none;
+    border-radius: 30px;
+}
+#A1{
+    position: absolute;
+    top: 0;
+}
+li:hover{
+    cursor: pointer;
+    background-color: #530a80b6;
+    text-decoration: underline;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #fff47e;
+    text-decoration: underline;
+}
+
+/*  */
+.cover{
+    background-color: #5c0096;
+    width: 100%;
+    height: 540px;
+    position: relative;
+    margin-top: 75px;
+}
+.about{
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+}
+.img{
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    background-color: black;
+    width: 480px;
+    height: 320px;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 40px;
+}
+.img:hover{
+    background-color: rgba(0, 0, 0, 0.900);
+}
+.ppt{
+    color: #5c0096;
+    font-size: 18px;
+}
+p{
+    font-size: 21px;
+}
+
+/*  */
+.container2{
+    background-color: #2c0047;
+    padding: 20px 75px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+    display: inline-block; 
+    font-size: 24px;
+}
+.title{
+    font-size: 32px;
+    color: #f7ea66;
+    text-align: center;
+}
+.mail{
+    width: 47.5%;
+    vertical-align: top;
+    margin-top: 25px;
+}
+.sub{
+    height: 40px;
+    width: 20%;
+    border-radius: 0 30px 30px 0;
+    color: #5c0096;
+}
+input{
+    height: 40px;
+    width: 77%;
+    border-radius: 30px 0 0 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+}

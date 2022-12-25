@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 540px;
+  height: 144px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px outset;
+  border-radius: 15px;
+}
+#dongho {
+  font-size: 120px;
+}

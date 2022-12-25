@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 1300px;
+}
+.win{
+    position: relative;
+}
+.tcc{
+    width: 320px;
+    background-color: rgb(217, 217, 217);
+    display: inline-block;
+    height: 650px;
+    vertical-align: top;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+span{
+    display: inline-block;
+}
+.ld{
+    display: inline;
+}
+.color{
+    width: 980px;
+    display: inline-block;
+    position: relative;
+    height: 650px;
+}
+.top{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    padding: 45px 0 0 20px;
+    background-color: white;
+}
+.help{
+    position: absolute;
+    right: 0;
+    width: 280px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: rgb(236, 236, 236);
+}
+button{
+    border: none;
+    background-color: rgb(217, 217, 217);
+    width: 320px;
+    font-size: 15px;
+    height: 40px;
+    padding-left: 15px;
+    text-align: left;
+}
+.muiten{
+    margin-bottom: 45px;
+}
+#find{
+    width: 290px;
+    height: 32px;
+    border: 2px solid gray;
+    margin: 25px 15px;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    margin: 15px 0;
+    display: inline-block;
+}
+.hl{
+    width: 20px;
+}
+.ct{
+    padding-left: 20px;
+}
+select{
+    width: 300px;
+    height: 35px;
+    border: 2px solid gray;
+    padding-left: 5px;
+    margin-bottom: 25px;
+}
+p{
+    margin: 15px 0;
+}
+input{
+    margin-bottom: 25px;
+}
+.rs{
+    padding-right: 16px;
+    padding-bottom: 30px;
+}

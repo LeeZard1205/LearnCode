@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Sample</title>
+</head>
+<body>
+
+<p>Sample</p>
+
+<div>
+<form id="fruitbox">
+<label><input type="radio" name="fruit" value="orange">Orange</label>
+<label><input type="radio" name="fruit" value="lemon">Lemon</label>
+<label><input type="radio" name="fruit" value="strawberry" >Strawberry</label>
+</form>
+</div>
+
+<div>
+<input type="button" value="Check" id="checkButton">
+</div>
+
+<script>
+function buttonClick(){
+  let checkValue = fruitRadio.elements['fruit'].value;
+  console.log('Nút radio được chọn có giá trị: ' + checkValue);
+}
+
+let fruitRadio = document.getElementById('fruitbox');
+// fruitRadio.elements[2].checked = true;
+
+let checkButton = document.getElementById('checkButton');
+checkButton.addEventListener('click', buttonClick);
+console.log(fruitRadio);
+</script>
+
+</body>
+</html>
