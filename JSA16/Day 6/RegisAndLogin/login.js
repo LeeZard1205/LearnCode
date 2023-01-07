@@ -19,12 +19,11 @@ function checkinf() {
         alert("Logged in successfully");
         mail.value = "";
         mk.value = "";
-        break;
-      } else {
         check = 1;
+        break;
       }
     }
-    if (check == 1) {
+    if (check == 0) {
       alert("Please check your email and password and try again!");
     }
   }
