@@ -5,6 +5,7 @@ let check = 0;
 
 if (localStorage.getItem("personAccount") == null) {
   localStorage.setItem("personAccount", JSON.stringify([]));
+  location.reload();
   check = 1;
 } else {
   var listUser = JSON.parse(localStorage.getItem("personAccount"));
