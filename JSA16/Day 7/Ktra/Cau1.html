@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="Cau1.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="title">Quản lí Menu</h1>
+      <div class="container2">
+        <div class="option">
+          <button class="btn" id="create" onclick="Create()">Create</button>
+          <button class="btn" id="read" onclick="Read()">Read</button>
+          <button class="btn" id="update" onclick="Update()">Update</button>
+          <button class="btn" id="delete" onclick="Delete()">Delete</button>
+        </div>
+        <div class="feature" id="C">
+          <h3 class="noti">Mời người dùng nhập món ăn muốn thêm vào menu:</h3>
+          <input class="inp" type="text" id="textC1" onchange="checkC()" />
+          <p class="check" id="checkC1"></p>
+        </div>
+        <div class="feature" id="R">
+          <h3 class="noti">Những món ăn hiện có trong menu là:</h3>
+          <p id="checkR1"></p>
+        </div>
+        <div class="feature" id="U">
+          <h3 class="noti">Mời người dùng nhập vào tên món muốn update:</h3>
+          <input class="inp" type="text" id="textU1" onchange="checkU1()" />
+          <p class="check" id="checkU1"></p>
+          <h3 class="noti">Mời người dùng nhập vào tên món ăn mới:</h3>
+          <input class="inp" type="text" id="textU2" onchange="checkU2()" />
+          <p class="check" id="checkU2"></p>
+        </div>
+        <div class="feature" id="D">
+          <h3 class="noti">Mời người dùng nhập vào tên món muốn Delete:</h3>
+          <input class="inp" type="text" id="textD1" onchange="checkD1()" />
+          <p class="check" id="checkD1"></p>
+          <button class="btn" id="dlt" onclick="checkD2()">Xác nhận xóa</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="Cau1.js"></script>
+  </body>
+</html>
