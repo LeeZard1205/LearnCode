@@ -53,13 +53,13 @@
   color: #495057;
 }
 #submit {
-  background-color: #b78a28;
+  background-color: #e32d2d;
   color: #f7f7f7;
   font-size: 16px;
 }
 #submit:hover {
   cursor: pointer;
-  background-color: #977324;
+  background-color: #bd2026;
 }
 .signup {
   height: 53px;
@@ -72,9 +72,9 @@
   align-items: center;
 }
 #sign {
-  color: #b78a28;
+  color: #e32d2d;
   text-decoration: none;
 }
 #sign:hover {
-  color: #977324;
+  color: #bd2026;
 }

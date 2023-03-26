@@ -39,7 +39,7 @@ function saveinf() {
       mk.value = "";
       mkcf.value = "";
       alert("Thank you! You have successfully registered.\nPlease login!");
-      window.location.href = "login.html";
+      window.location.href = "/JSA16/SPCK/Html/login.html";
     }
   } else {
     listUser.push({
@@ -51,6 +51,6 @@ function saveinf() {
     mk.value = "";
     mkcf.value = "";
     alert("Thank you! You have successfully registered.\nPlease login!");
-    window.location.href = "login.html";
+    window.location.href = "/JSA16/SPCK/Html/login.html";
   }
 }

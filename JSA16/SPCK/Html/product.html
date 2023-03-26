@@ -5,69 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
-    <link rel="stylesheet" href="product.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/JSA16/SPCK/Css/product.css" />
   </head>
   <body>
     <!-- Thanh menu -->
     <div class="thanhMenu">
-      <div class="logo">
-        <a href="home.html"><img src="logo.jpg" class="anhLogo" alt="" /></a>
-      </div>
-      <div class="option">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#ct">Contacts</a></li>
-        </ul>
-      </div>
-      <div class="container1">
-        <a href="cart.html" class="cart">
-          <img src="cart.png" alt="" />
-          Cart
-          <span></span>
-        </a>
-        <div class="account">
-          <a href="acoount.html" class="account">
-            <img src="user.png" alt="" />
-            <span id="acc">My account</span>
+      <div class="menuContainer">
+        <div class="logo">
+          <a href="/JSA16/SPCK/Html/home.html">
+            <img src="/JSA16/SPCK/Main image/logo.jpg" class="anhLogo" alt="" />
           </a>
-          <div class="recommend">
-            <div id="unsign">
-              <a href="login.html" class="signIn">
-                <button class="sigBtn">Sign in</button>
-              </a>
-              <strong>Don't have an account?</strong>
-              <a href="register.html" class="register"><i>click here</i></a>
-              <a href="javascript:void(0);" class="logGg">
-                <button class="ggBtn">Sign in with Google</button>
-              </a>
-              <a href="forgot.html" class="forgot">
-                <i>Forgot your password</i>
-              </a>
-              <div class="benefit">
-                <strong>Benefits of Registration</strong>
-                <ul>
-                  <li>Get discount from 3-10%</li>
-                  <li>Exclusive promotions &amp; offers</li>
-                </ul>
+        </div>
+        <div class="option" id="option">
+          <ul>
+            <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+            <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+            <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+            <li><a href="#ct">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="container1">
+          <a href="/JSA16/SPCK/Html/cart.html" class="cart">
+            <img src="/JSA16/SPCK/Icon/cart.png" alt="" />
+            <span id="cartNum">Cart</span>
+          </a>
+          <div class="account">
+            <a href="" class="account">
+              <img src="/JSA16/SPCK/Icon/user.png" alt="" />
+              <span id="acc">My account</span>
+            </a>
+            <div class="recommend">
+              <div id="unsign">
+                <a href="/JSA16/SPCK/Html/login.html" class="signIn">
+                  <button class="sigBtn">Sign in</button>
+                </a>
+                <strong>Don't have an account?</strong>
+                <a href="/JSA16/SPCK/Html/register.html" class="register"
+                  ><i>click here</i></a
+                >
+                <a href="javascript:void(0);" class="logGg">
+                  <button class="ggBtn">Sign in with Google</button>
+                </a>
+                <a href="" class="forgot">
+                  <i>Forgot your password</i>
+                </a>
+                <div class="benefit">
+                  <strong>Benefits of Registration</strong>
+                  <ul>
+                    <li>Get discount from 3-10%</li>
+                    <li>Exclusive promotions &amp; offers</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div id="signed">
-              <button class="outBtn" onclick="signOut()">Sign out</button>
+              <div id="signed">
+                <button class="outBtn" onclick="signOut()">Sign out</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="option" id="optionCopy">
+        <ul>
+          <li><a href="/JSA16/SPCK/Html/home.html">Home</a></li>
+          <li><a href="/JSA16/SPCK/Html/shop.html">Shop</a></li>
+          <li><a href="/JSA16/SPCK/Html/about.html">About</a></li>
+          <li><a href="#ct">Contacts</a></li>
+        </ul>
+      </div>
     </div>
     <!-- Product -->
     <div class="container2">
+      <div class="copy">
+        <h1 id="proNameCopy"></h1>
+        <h2 id="proPriceCopy"></h2>
+      </div>
       <div class="proPic">
         <img src="" alt="" id="pic" />
       </div>
       <div class="proInfo">
-        <h1 id="proName"></h1>
-        <h2 id="proPrice"></h2>
+        <div class="ori">
+          <h1 id="proName"></h1>
+          <h2 id="proPrice"></h2>
+        </div>
         <div class="rate">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -108,8 +131,8 @@
           <a href="javascript:void(0);" class="plus" onclick="them()"></a>
         </div>
         <div class="nut">
-          <button onclick="add()" class="addBtn">Add to cart</button>
-          <button class="buyBtn" onclick="buy()">Buy now</button>
+          <button id="addBtn">Add to cart</button>
+          <button id="buyBtn">Buy now</button>
         </div>
       </div>
     </div>
@@ -119,23 +142,25 @@
         <h2>
           <i><b>CONTACTS</b></i>
         </h2>
-        <div class="info">
-          Me:
-          <br />
-          Address:
-          <br />
-          Phone:
-          <br />
-          Email:
-        </div>
-        <div class="info">
-          Someone you known
-          <br />
-          My Heart
-          <br />
-          0886750015
-          <br />
-          wowomenday@gmail.com
+        <div class="lhContainer">
+          <div class="info">
+            Me:
+            <br />
+            Address:
+            <br />
+            Phone:
+            <br />
+            Email:
+          </div>
+          <div class="info">
+            Someone you known
+            <br />
+            My Heart
+            <br />
+            0886750015
+            <br />
+            wowomenday@gmail.com
+          </div>
         </div>
       </div>
 
@@ -145,7 +170,7 @@
         </h2>
         <div class="info2">
           <a href="https://www.facebook.com/Internationalwomensday"
-            ><img src="fb.png" alt="" />
+            ><img src="/JSA16/SPCK/Icon/fb.png" alt="" />
           </a>
           <a href="https://www.facebook.com/Internationalwomensday"
             >https://facebook.com/Internationalwomensday
@@ -153,7 +178,7 @@
         </div>
         <div class="info2">
           <a href="https://twitter.com/womensday"
-            ><img src="tw.png" alt="" />
+            ><img src="/JSA16/SPCK/Icon/tw.png" alt="" />
           </a>
           <a href="https://twitter.com/womensday"
             >https://twitter.com/womensday
@@ -161,7 +186,7 @@
         </div>
         <div class="info2">
           <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
-            ><img src="yt.png" alt="" />
+            ><img src="/JSA16/SPCK/Icon/yt.png" alt="" />
           </a>
           <a href="https://www.youtube.com/@InternationalWomensDay-IWD"
             >https://youtube.com/@InternationalWomensDay-IWD
@@ -175,6 +200,6 @@
       <a href="#scroll"><img id="up" src="up.png" alt="" /></a>
     </div>
 
-    <script src="product.js"></script>
+    <script src="/JSA16/SPCK/Js/product.js"></script>
   </body>
 </html>

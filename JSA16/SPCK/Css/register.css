@@ -51,11 +51,11 @@
   color: #495057;
 }
 #submit {
-  background-color: #b78a28;
+  background-color: #e32d2d;
   color: #f7f7f7;
   font-size: 16px;
 }
 #submit:hover {
   cursor: pointer;
-  background-color: #977324;
+  background-color: #bd2026;
 }

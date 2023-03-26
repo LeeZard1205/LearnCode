@@ -7,7 +7,7 @@ function checkinf() {
     localStorage.getItem("Accounts") == JSON.stringify([])
   ) {
     alert("You haven't got an account. Please register!");
-    window.location.href = "register.html";
+    window.location.href = "/JSA16/SPCK/Html/register.html";
   } else {
     var listUser = JSON.parse(localStorage.getItem("Accounts"));
     if (mail.value == "" || mk.value == "") {
@@ -25,7 +25,7 @@ function checkinf() {
           check = 1;
           listUser[i].status = "signed";
           localStorage.setItem("Accounts", JSON.stringify(listUser));
-          window.location.href = "home.html";
+          window.location.href = "/JSA16/SPCK/Html/home.html";
           break;
         }
       }

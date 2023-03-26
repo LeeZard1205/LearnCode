@@ -32,6 +32,7 @@ function signOut() {
   }
   location.reload();
 }
+
 // Wang gao
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -88,8 +89,12 @@ for (let i = 0; i < proPic.length; i++) {
   });
 }
 // Add to cart
-let addBtn = document.getElementsByClassName("addBtn");
-if (check == 1 && listUser[a].buyPro == null) {
+// check
+if (
+  (check == 1 && listUser[a].buyPro == null) ||
+  (check == 1 && listUser[a].buyPro.length == 0)
+) {
+  let buyPro = [];
   for (let i = 0; i < proPic.length; i++) {
     buyPro[i] = {
       ppic: proPic[i].src,
@@ -98,12 +103,23 @@ if (check == 1 && listUser[a].buyPro == null) {
       pnum: 0,
     };
   }
+  console.log(buyPro);
   listUser[a].buyPro = buyPro;
   localStorage.setItem("Accounts", JSON.stringify(listUser));
-} else if (check == 1 && listUser[a].buyPro != null) {
+  location.reload();
+} else if (
+  check == 1 &&
+  listUser[a].buyPro != null &&
+  listUser[a].buyPro.length != 0
+) {
   var buyPro = listUser[a].buyPro;
 }
-if (localStorage.getItem("buyPro") == null && check == 0) {
+
+if (
+  (JSON.parse(localStorage.getItem("buyPro")) == null && check == 0) ||
+  (JSON.parse(localStorage.getItem("buyPro")).length == 0 && check == 0)
+) {
+  let buyPro = [];
   for (let i = 0; i < proPic.length; i++) {
     buyPro[i] = {
       ppic: proPic[i].src,
@@ -114,20 +130,34 @@ if (localStorage.getItem("buyPro") == null && check == 0) {
   }
   localStorage.setItem("buyPro", JSON.stringify(buyPro));
   location.reload();
-} else {
+} else if (localStorage.getItem("buyPro").length != 0 && check == 0) {
   var buyPro = JSON.parse(localStorage.getItem("buyPro"));
 }
-
+// function
+let addBtn = document.getElementsByClassName("addBtn");
 for (let i = 0; i < proPic.length; i++) {
   addBtn[i].addEventListener("click", function () {
-    let b = buyPro[i].pnum;
-    console.log(b);
-    buyPro[i].pnum = b + 1;
+    buyPro[i].pnum += 1;
     if (check == 1) {
       listUser[a].buyPro = buyPro;
       localStorage.setItem("Accounts", JSON.stringify(listUser));
     } else if (check == 0) {
       localStorage.setItem("buyPro", JSON.stringify(buyPro));
     }
+    // Cart
+    let cartNum = document.getElementById("cartNum");
+    let c = 0;
+    for (let i = 0; i < proPic.length; i++) {
+      c += Number(buyPro[i].pnum);
+    }
+    cartNum.innerHTML = `Cart(${c})`;
   });
 }
+
+// Cart
+let cartNum = document.getElementById("cartNum");
+let c = 0;
+for (let i = 0; i < proPic.length; i++) {
+  c += Number(buyPro[i].pnum);
+}
+cartNum.innerHTML = `Cart(${c})`;
