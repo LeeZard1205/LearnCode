@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.clockBorder {
+  width: 525px;
+  height: 525px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4),
+    40px 40px 60px rgba(0, 0, 0, 0.4);
+  border: 12.5px solid #000;
+  border-radius: 50%;
+}
+.clock {
+  width: 500px;
+  height: 500px;
+  background: #fff
+    url(https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3358&q=80)
+    center center;
+  border: 12.5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: inset 40px 40px 90px rgba(0, 0, 0, 0.2),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+.clockScrew {
+  width: 9px;
+  height: 9px;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 15px / 2);
+  top: calc(50% - 15px / 2);
+  z-index: 5;
+}
+.clockNumber {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#clock12 {
+  left: calc(50% - 18.5px);
+  width: 37px;
+  height: 426px;
+  top: 37px;
+  flex-direction: column;
+}
+#clock1 {
+  flex-direction: row;
+  height: 37px;
+  width: calc(426px / 2);
+  left: calc(25% + 18.5px);
+  top: calc(213px * (2 - 1.732050808) / 2 + 37px);
+}
+#clock2 {
+  flex-direction: row;
+  height: 37px;
+  width: calc(426px * 1.732050808 / 2);
+  left: calc(213px * (2 - 1.732050808) / 2 + 37px);
+  top: calc(213px / 2 + 27.75px);
+}
+#clock3 {
+  flex-direction: row;
+  height: 37px;
+  width: 426px;
+  left: 37px;
+  top: calc(213px + 17.5px);
+}
+#clock4 {
+  flex-direction: row;
+  height: 37px;
+  width: calc(426px * 1.732050808 / 2);
+  left: calc(213px * (2 - 1.732050808) / 2 + 37px);
+  bottom: calc(213px / 2 + 27.75px);
+}
+#clock5 {
+  flex-direction: row;
+  height: 37px;
+  width: calc(426px / 2);
+  left: calc(25% + 18.5px);
+  bottom: calc(213px * (2 - 1.732050808) / 2 + 37px);
+}
+#clockSecond,
+#clockMinute,
+#clockHour,
+.clockIndicator {
+  position: absolute;
+  background: black;
+  transform-origin: bottom center;
+  z-index: 2;
+}
+#clockHour {
+  z-index: 3;
+  height: 170px;
+  left: calc(50% - 2px);
+  width: 4px;
+  border-radius: 2px;
+  margin-top: 80px;
+  background-color: #000;
+}
+#clockMinute {
+  z-index: 4;
+  left: calc(50% - 1.5px);
+  width: 3px;
+  border-radius: 1.5px;
+  margin-top: 43px;
+  height: 207px;
+  background: #000;
+}
+#clockSecond {
+  left: calc(50% - 1px);
+  width: 2px;
+  border-radius: 1px;
+  margin-top: 43px;
+  height: 250px;
+  transform-origin: 1px 207px;
+  background: red;
+  z-index: 6;
+}
+.clockIndicator {
+  left: calc(50% - 1px);
+  width: 2px;
+  border-radius: 1px;
+  margin-top: 20px;
+  height: calc(230px - 7px);
+  border-top: 7px solid black;
+  background: none;
+}
+.clockIndicator:nth-of-type(5n) {
+  width: 3px;
+  opacity: 1;
+  height: calc(230px - 11px);
+  border-top: 11px solid black;
+}
+
+@keyframes time {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
