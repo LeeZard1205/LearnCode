@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu 10</title>
+  </head>
+  <body>
+    <script>
+      // Câu 10: Thực hiện duyệt string sau đây: “ High knowledge, high return”.
+      // Chuyển đổi string về dạng array, xóa bỏ các phần tử có giá trị là “ “;
+      // và các phần tử có giá trị là chữ hoa chuyển thành chữ thường.
+      let string = " High knowledge, high return";
+      string = string.toLowerCase();
+      string = string.substring(1, string.length);
+      let array = string.split(" ");
+      console.log(array);
+    </script>
+  </body>
+</html>

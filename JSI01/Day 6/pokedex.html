@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent Pro"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pokedex.css" />
+    <script
+      src="https://kit.fontawesome.com/b25957ae4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img
+      src="https://images.nintendolife.com/96205d207578a/pokemon-scarlet-and-violet-complete-paldea-region-pokedex-1.large.jpg"
+      alt="bg"
+      class="background"
+    />
+    <div class="ctn">
+      <div class="leftCtn">
+        <div class="leftTop">
+          <div class="logoCtn">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0253/3294/0882/products/UltraBall1.png?v=1666201529"
+              alt=""
+              class="logo"
+            />
+            <div class="titCtn1">
+              <span class="tit1" id="A">A</span>
+              <span class="tit1" id="N">N</span>
+              <span class="tit1" id="I">I</span>
+            </div>
+            <div class="titBorder1"></div>
+          </div>
+
+          <div class="titCtn">
+            <span id="MON">MON</span>
+            <div class="titBorder2"></div>
+          </div>
+        </div>
+
+        <div class="leftBorder">
+          <div class="screen">
+            <div class="scTop">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+
+            <div class="scContent">
+              <img
+                src="https://wallpapercave.com/wp/wp8813147.png"
+                alt="No image captured!"
+                id="aniImg"
+              />
+            </div>
+
+            <div class="scBot">
+              <div class="bigCircle"></div>
+              <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cylinder">
+          <div class="elip1"></div>
+          <div class="elip1" id="e1"></div>
+          <div class="elip1" id="e2"></div>
+          <div class="elip1" id="e3"></div>
+          <div class="elip1" id="e4"></div>
+          <div class="elip2"></div>
+        </div>
+      </div>
+      <div class="rightCtn">
+        <div class="tit2">
+          <span id="Ani">Ani</span>
+          <span id="mon">mon</span>
+          <span id="Index">Index</span>
+        </div>
+        <div class="rightBorder">
+          <div class="search">
+            <h4>PRESS ENTER TO GET THE RESULT !!!</h4>
+            <input type="text" placeholder="Search Animon Name" id="search" />
+            <button id="openlist">
+              <i class="fa-solid fa-chevron-down" style="color: #fdfdfc"></i>
+            </button>
+            <ul id="list"></ul>
+          </div>
+          <div class="status">
+            <div class="info">
+              <h4>NAME</h4>
+              <p class="detail" id="name">&#8213;</p>
+            </div>
+            <div class="info">
+              <h4>N-DEX</h4>
+              <p class="detail" id="ndex">&#8213;</p>
+            </div>
+            <div class="info">
+              <h4>WEIGHT</h4>
+              <p class="detail" id="weight">&#8213;</p>
+            </div>
+            <div class="info">
+              <h4>HEIGHT</h4>
+              <p class="detail" id="height">&#8213;</p>
+            </div>
+            <div class="info" id="infoType">
+              <h4>TYPE</h4>
+              <p class="detail" id="type">&#8213;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="pokedex.js"></script>
+  </body>
+</html>
