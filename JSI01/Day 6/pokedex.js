@@ -21,9 +21,9 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=10000&offset=0")
   });
 //
 window.addEventListener("click", function (e) {
-  if (search.contains(e.target) || list.contains(e.target)) {
+  if (search.contains(e.target)) {
     list.style.display = "block";
-  } else if (openlist.contains(e.target) || list.contains(e.target)) {
+  } else if (openlist.contains(e.target)) {
     if (list.style.display == "block") {
       list.style.display = "none";
     } else if ((list.style.display = "none")) {
