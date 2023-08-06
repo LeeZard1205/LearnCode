@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      src="https://kit.fontawesome.com/2cf3abe36f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lemonada"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/JSI01/SPCK/CSSGO/home.css" />
+  </head>
+  <body>
+    <!-- Top -->
+    <div class="topMenu">
+      <div class="menuCtn">
+        <div class="leftCtn">
+          <div class="logo">
+            <a href="/JSI01/SPCK/HTMLOL/home.html">
+              <img src="/JSI01/SPCK/logo.png" class="anhLogo" alt="" />
+            </a>
+          </div>
+          <div class="option" id="option">
+            <ul>
+              <li><a href="/JSI01/SPCK/HTMLOL/home.html">Home</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/hotel.html">Hotel</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/guide.html">Guide</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/discount.html">Discount</a></li>
+              <li><a href="#ct">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightCtn">
+          <div class="noti">
+            <img src="/JSI01/SPCK/ICONIC/bell.JPG" alt="" class="notiImg" />
+          </div>
+          <div class="account">
+            <div id="account">
+              <img src="/JSI01/SPCK/ICONIC/user.JPG" alt="" id="userImg" />
+              <span id="userName">Account</span>
+            </div>
+            <div class="accFeature">
+              <div id="accUnlog">
+                <div class="accCtn" id="accLogin">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/login.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Login
+                </div>
+                <div class="accCtn" id="accSignup">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/signup.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Sign Up
+                </div>
+              </div>
+              <div id="accLog">
+                <div class="accCtn" id="accSetting">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/setting.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Personal Profile
+                </div>
+                <div class="accCtn" id="accSignout">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/signout.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Sign Out
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <!--  -->
+    <!-- WangGao -->
+    <div class="wangGao">
+      <div class="slideCtn">
+        <div class="slides fade">
+          <div class="anhSo">1 / 3</div>
+          <img id="slide1" src="/JSI01/SPCK/MAINPIC/r12.jpg" class="anh" />
+        </div>
+
+        <div class="slides fade">
+          <div class="anhSo">2 / 3</div>
+          <img id="slide2" src="/JSI01/SPCK/MAINPIC/r21.jpg" class="anh" />
+        </div>
+
+        <div class="slides fade">
+          <div class="anhSo">3 / 3</div>
+          <img id="slide3" src="/JSI01/SPCK/MAINPIC/r22.jpg" class="anh" />
+        </div>
+
+        <a class="prev" onclick="pushSlides(-1)">❮</a>
+        <a class="next" onclick="pushSlides(1)">❯</a>
+      </div>
+      <div class="dotCtn">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="hurry">
+      <h1>
+        <i>HURRY UP !!!</i>
+        <img src="/JSI01/SPCK/ICONIC/hurry.png" id="hurryImg" alt="" />
+      </h1>
+    </div>
+    <!-- Flash sale -->
+    <div class="flashSale">
+      <div class="flTop">
+        <div class="flTLeft">
+          <img src="/JSI01/SPCK/ICONIC/flashSale.png" alt="" id="flImg" />
+          <div class="flCountdown">
+            <span>The program will end in</span>
+            <div class="saleTime">
+              <div class="timeCtn" id="h">00</div>
+              :
+              <div class="timeCtn" id="m">00</div>
+              :
+              <div class="timeCtn" id="s">00</div>
+            </div>
+          </div>
+        </div>
+        <div class="flTRight">
+          <div class="saleDate" id="today">
+            <h4><b>00:00-23:59</b></h4>
+            <p>
+              HAPPENING
+              <img id="fireImg" src="/JSI01/SPCK/ICONIC/fire.png" alt="" />
+            </p>
+          </div>
+          <div class="saleDate" id="tmr">
+            <h4><b>00:00-23:59</b></h4>
+            <span id="tmrDate"></span>
+          </div>
+        </div>
+      </div>
+      <div class="flContent">
+        <div class="flTour">
+          <img src="/JSI01/SPCK/MAINPIC/hotel.JPG" alt="" class="flTourImg" />
+          <h3 class="flTourName">Khách sạn Thành phố Hà Nội</h3>
+          <p class="flTourStar">
+            <i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i>
+          </p>
+          <p class="flTourAddress">Thành phố Hà Nội</p>
+          <div class="flTourPrice">
+            <p class="bfPrice"><del>2.500.000 ₫</del></p>
+            <h3 class="atPrice">1.700.000 ₫</h3>
+          </div>
+        </div>
+        <div class="flTour">
+          <img src="/JSI01/SPCK/MAINPIC/hotel.JPG" alt="" class="flTourImg" />
+          <h3 class="flTourName">Khách sạn Thành phố Hồ Chí Minh</h3>
+          <p class="flTourStar">
+            <i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i>
+          </p>
+          <p class="flTourAddress">Thành Phố Hồ Chí Minh</p>
+          <div class="flTourPrice">
+            <p class="bfPrice"><del>2.500.000 ₫</del></p>
+            <h3 class="atPrice">1.700.000 ₫</h3>
+          </div>
+        </div>
+        <div class="flTour">
+          <img src="/JSI01/SPCK/MAINPIC/hotel.JPG" alt="" class="flTourImg" />
+          <h3 class="flTourName">Khách sạn Thành phố Đà Nẵng</h3>
+          <p class="flTourStar">
+            <i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i>
+          </p>
+          <p class="flTourAddress">Thành phố Đà Nẵng</p>
+          <div class="flTourPrice">
+            <p class="bfPrice"><del>2.500.000 ₫</del></p>
+            <h3 class="atPrice">1.700.000 ₫</h3>
+          </div>
+        </div>
+        <div class="flTour">
+          <img src="/JSI01/SPCK/MAINPIC/hotel.JPG" alt="" class="flTourImg" />
+          <h3 class="flTourName">?</h3>
+          <p class="flTourStar">
+            <i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i
+            ><i class="fa-solid fa-star" style="color: #ffbc39"></i>
+          </p>
+          <p class="flTourAddress">?</p>
+          <div class="flTourPrice">
+            <p class="bfPrice"><del>? ₫</del></p>
+            <h3 class="atPrice">? ₫</h3>
+          </div>
+        </div>
+      </div>
+      <div class="flBot">
+        <button id="flMore">See more</button>
+      </div>
+    </div>
+    <!-- Favourite Destination -->
+    <div class="favorDesti">
+      <h1 class="destiTit">Favourite Indoor Destination</h1>
+      <p class="destiCmt">Which mtf said that we must go have fun outside!?</p>
+      <p class="destiCmt">
+        Spending time at home takes up most of our summer, bros.
+      </p>
+
+      <div class="inDesti">
+        <div class="inLeft">
+          <div class="inLTop">
+            <div class="destiName">
+              <h1 class="place"></h1>
+              <p class="destiNumber"></p>
+            </div>
+          </div>
+          <div class="inLBotCtn">
+            <div class="inLBot">
+              <div class="destiName">
+                <h1 class="place"></h1>
+                <p class="destiNumber"></p>
+              </div>
+            </div>
+            <div class="inLBot">
+              <div class="destiName">
+                <h1 class="place"></h1>
+                <p class="destiNumber"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inRight">
+          <div class="destiName">
+            <h1 class="place"></h1>
+            <p class="destiNumber"></p>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="destiTit">Favourite Outdoor Destination</h1>
+      <p class="destiCmt">
+        Hey, the world is biggg af so don't be lazy, let's hang out bros.
+      </p>
+
+      <div class="outDesti">
+        <div class="outLeft">
+          <div class="destiName">
+            <h1 class="place"></h1>
+            <p class="destiNumber"></p>
+          </div>
+        </div>
+        <div class="outRight">
+          <div class="outRTop">
+            <div class="destiName">
+              <h1 class="place"></h1>
+              <p class="destiNumber"></p>
+            </div>
+          </div>
+          <div class="outRBotCtn">
+            <div class="outRBot">
+              <div class="destiName">
+                <h1 class="place"></h1>
+                <p class="destiNumber"></p>
+              </div>
+            </div>
+            <div class="outRBot">
+              <div class="destiName">
+                <h1 class="place"></h1>
+                <p class="destiNumber"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bot -->
+    <div class="botCt" id="ct">
+      <div class="ctCtn">
+        <div class="ct" id="address">
+          <h2 class="botTit">
+            <img src="/JSI01/SPCK/logo.png" class="anhLogo" alt="" />
+          </h2>
+          <p>Milky Way galaxy, Solar System,</p>
+          <p>Earth, Vietnam, Your heart</p>
+          <p>+84 886 750 015</p>
+          <p>Goat@gmail.com</p>
+        </div>
+        <div class="ct" id="place">
+          <h2 class="botTit">Popular Destination</h2>
+          <p>Internet Cafe</p>
+          <p>Your School</p>
+          <p>Your House</p>
+          <p>Food Stall</p>
+        </div>
+        <div class="ct" id="follow">
+          <h2 class="botTit">Follow Us On</h2>
+          <p>Instagram <i class="fa-brands fa-instagram"></i></p>
+          <p>Facebook <i class="fa-brands fa-facebook"></i></p>
+          <p>Youtube <i class="fa-brands fa-youtube"></i></p>
+          <p>Twitter <i class="fa-brands fa-square-twitter"></i></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <hr />
+        <h5 id="cpr">
+          Copyright ©2023 All rights reserved | This Shhi... is made with
+          <i class="fa-regular fa-heart" style="color: #000000"></i> by Goat
+        </h5>
+      </div>
+    </div>
+
+    <!-- Up to top -->
+    <div id="scroll"></div>
+    <div class="up">
+      <a href="#scroll"><img id="up" src="/JSA16/SPCK/Icon/up.png" alt="" /></a>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script type="module" src="/JSI01/SPCK/JAVALORANT/home.js"></script>
+  </body>
+</html>

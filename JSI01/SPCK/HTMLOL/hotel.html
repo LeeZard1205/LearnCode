@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <script
+      src="https://kit.fontawesome.com/2cf3abe36f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lemonada"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/JSI01/SPCK/CSSGO/hotel.css" />
+  </head>
+  <body>
+    <!-- Top -->
+    <div class="topMenu">
+      <div class="menuCtn">
+        <div class="leftCtn">
+          <div class="logo">
+            <a href="/JSI01/SPCK/HTMLOL/home.html">
+              <img src="/JSI01/SPCK/logo.png" class="anhLogo" alt="" />
+            </a>
+          </div>
+          <div class="option" id="option">
+            <ul>
+              <li><a href="/JSI01/SPCK/HTMLOL/home.html">Home</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/hotel.html">Hotel</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/guide.html">Guide</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/discount.html">Discount</a></li>
+              <li><a href="#ct">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightCtn">
+          <div class="noti">
+            <img src="/JSI01/SPCK/ICONIC/bell.JPG" alt="" class="notiImg" />
+          </div>
+          <div class="account">
+            <div id="account">
+              <img src="/JSI01/SPCK/ICONIC/user.JPG" alt="" id="userImg" />
+              <span id="userName">Account</span>
+            </div>
+            <div class="accFeature">
+              <div id="accUnlog">
+                <div class="accCtn" id="accLogin">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/login.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Login
+                </div>
+                <div class="accCtn" id="accSignup">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/signup.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Sign Up
+                </div>
+              </div>
+              <div id="accLog">
+                <div class="accCtn" id="accSetting">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/setting.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Personal Profile
+                </div>
+                <div class="accCtn" id="accSignout">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/signout.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Sign Out
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bg -->
+    <div class="bg"></div>
+
+    <!-- Content -->
+    <div class="hotelCtn">
+      <img src="/JSI01/SPCK/MAINPIC/hotelpic.jpg" alt="" class="hotelPic" />
+      <div class="hotelCont">
+        <h1 class="hotelTit">Hotel</h1>
+        <p>Discover a hotel that defines a new dimension of luxury.</p>
+        <p>Book your hotel quickly, anywhere, anytime at EniWhe!</p>
+      </div>
+    </div>
+    <div class="ctn">
+      <div class="dateFil">
+        <div class="dateCtn">
+          <p>Loction</p>
+          <input type="text" id="search" placeholder="Search Location" />
+          <button id="openlist">
+            <i class="fa-solid fa-chevron-down" style="color: #fdfdfc"></i>
+          </button>
+          <ul id="list"></ul>
+        </div>
+        <div class="dateCtn" id="checkCtn">
+          <div class="checkCtn">
+            <p>Check-in</p>
+            <input type="date" name="" id="checkIn" class="checkDate" />
+          </div>
+          <div class="checkCtn" id="dayCtn">
+            <p>
+              <span id="checkDay"></span>
+              <i class="fa-regular fa-moon" style="color: #000000"></i>
+            </p>
+          </div>
+          <div class="checkCtn">
+            <p>Check-out</p>
+            <input type="date" name="" id="checkOut" class="checkDate" />
+          </div>
+        </div>
+        <div class="dateCtn">
+          <p>Guests & Rooms</p>
+          <div class="grCtn">
+            <select name="room" id="room" class="gr">
+              <option value="default">Room</option>
+            </select>
+            <select name="guest" id="guest" class="gr">
+              <option value="default">Guest</option>
+            </select>
+          </div>
+        </div>
+        <button id="searchBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.7em"
+            viewBox="0 0 512 512"
+          >
+            <style>
+              svg {
+                fill: #ffffff;
+                width: 50px;
+              }
+            </style>
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="roomCont">
+        <div class="rateFil">
+          <div class="sortTit fil">
+            <h3>Sort</h3>
+          </div>
+          <hr />
+          <div class="sort fil">
+            <div class="sorts" id="sug"><span>Suggested</span></div>
+            <hr />
+            <div class="sorts" id="hprice"><span>Highest Price</span></div>
+            <hr />
+            <div class="sorts" id="lprice"><span>Lowest Price</span></div>
+            <hr />
+            <div class="sorts" id="star"><span>Star Rating</span></div>
+            <hr />
+            <div class="sorts" id="review"><span>Top Reviewed</span></div>
+          </div>
+          <hr />
+          <div class="filterTit fil">
+            <h3>Filter</h3>
+            <p id="clear">Clear all filters</p>
+          </div>
+          <hr />
+          <div class="price fil">
+            <h4>Price (price per night)</h4>
+            <!-- <div class="filProp">
+              <div class="boxCtn">
+                <input type="checkbox" unchecked name="" class="check" id="" />
+              </div>
+              <span>
+                3.000.000<span style="text-decoration: underline">đ</span> -
+                4.000.000<span style="text-decoration: underline">đ</span>
+              </span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input type="checkbox" unchecked name="" class="check" id="" />
+              </div>
+              <span>
+                2.000.000<span style="text-decoration: underline">đ</span> -
+                3.000.000<span style="text-decoration: underline">đ</span>
+              </span>
+            </div> -->
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="tr2"
+                />
+              </div>
+              <span>
+                1.000.000<span style="text-decoration: underline">đ</span> -
+                2.000.000<span style="text-decoration: underline">đ</span>
+              </span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="tr1"
+                />
+              </div>
+              <span>
+                0<span style="text-decoration: underline">đ</span> -
+                1.000.000<span style="text-decoration: underline">đ</span>
+              </span>
+            </div>
+          </div>
+          <hr />
+          <div class="star fil">
+            <h4>Star rating</h4>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="s5"
+                />
+              </div>
+              <span>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="s4"
+                />
+              </div>
+              <span>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="s3"
+                />
+              </div>
+              <span>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="s2"
+                />
+              </div>
+              <span>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="s1"
+                />
+              </div>
+              <span>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </span>
+            </div>
+          </div>
+          <hr />
+          <div class="review fil">
+            <h4>Customer review</h4>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="c9"
+                />
+              </div>
+              <span>Exceptional (9.0+)</span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="c8"
+                />
+              </div>
+              <span>Excellent (8.0+)</span>
+            </div>
+            <div class="filProp">
+              <div class="boxCtn">
+                <input
+                  type="checkbox"
+                  unchecked
+                  name=""
+                  class="check"
+                  id="c7"
+                />
+              </div>
+              <span>Good (7.0+)</span>
+            </div>
+          </div>
+        </div>
+        <div class="roomCtn" id="roomCtn"></div>
+      </div>
+    </div>
+
+    <!-- Bot -->
+    <div class="botCt" id="ct">
+      <div class="ctCtn">
+        <div class="ct" id="address">
+          <h2 class="botTit">
+            <img src="/JSI01/SPCK/logo.png" class="anhLogo" alt="" />
+          </h2>
+          <p>Milky Way galaxy, Solar System,</p>
+          <p>Earth, Vietnam, Your heart</p>
+          <p>+84 886 750 015</p>
+          <p>Goat@gmail.com</p>
+        </div>
+        <div class="ct" id="place">
+          <h2 class="botTit">Popular Destination</h2>
+          <p>Internet Cafe</p>
+          <p>Your School</p>
+          <p>Your House</p>
+          <p>Food Stall</p>
+        </div>
+        <div class="ct" id="follow">
+          <h2 class="botTit">Follow Us On</h2>
+          <p>Instagram <i class="fa-brands fa-instagram"></i></p>
+          <p>Facebook <i class="fa-brands fa-facebook"></i></p>
+          <p>Youtube <i class="fa-brands fa-youtube"></i></p>
+          <p>Twitter <i class="fa-brands fa-square-twitter"></i></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <hr />
+        <h5 id="cpr">
+          Copyright ©2023 All rights reserved | This Shhi... is made with
+          <i class="fa-regular fa-heart" style="color: #000000"></i> by Goat
+        </h5>
+      </div>
+    </div>
+
+    <!-- Up to top -->
+    <div id="scroll"></div>
+    <div class="up">
+      <a href="#scroll"><img id="up" src="/JSA16/SPCK/Icon/up.png" alt="" /></a>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script type="module" src="/JSI01/SPCK/JAVALORANT/hotel.js"></script>
+  </body>
+</html>

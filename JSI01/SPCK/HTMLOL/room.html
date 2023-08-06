@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room</title>
+    <script
+      src="https://kit.fontawesome.com/2cf3abe36f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lemonada"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/JSI01/SPCK/CSSGO/room.css" />
+  </head>
+  <body>
+    <!-- Top -->
+    <div class="topMenu">
+      <div class="menuCtn">
+        <div class="leftCtn">
+          <div class="logo">
+            <a href="/JSI01/SPCK/HTMLOL/home.html">
+              <img src="/JSI01/SPCK/logo.png" class="anhLogo" alt="" />
+            </a>
+          </div>
+          <div class="option" id="option">
+            <ul>
+              <li><a href="/JSI01/SPCK/HTMLOL/home.html">Home</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/hotel.html">Hotel</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/guide.html">Guide</a></li>
+              <li><a href="/JSI01/SPCK/HTMLOL/discount.html">Discount</a></li>
+              <li><a href="#ct">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightCtn">
+          <div class="noti">
+            <img src="/JSI01/SPCK/ICONIC/bell.JPG" alt="" class="notiImg" />
+          </div>
+          <div class="account">
+            <div id="account">
+              <img src="/JSI01/SPCK/ICONIC/user.JPG" alt="" id="userImg" />
+              <span id="userName">Account</span>
+            </div>
+            <div class="accFeature">
+              <div id="accUnlog">
+                <div class="accCtn" id="accLogin">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/login.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Login
+                </div>
+                <div class="accCtn" id="accSignup">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/signup.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Sign Up
+                </div>
+              </div>
+              <div id="accLog">
+                <div class="accCtn" id="accSetting">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/setting.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Personal Profile
+                </div>
+                <div class="accCtn" id="accSignout">
+                  <img
+                    src="/JSI01/SPCK/ICONIC/signout.png"
+                    alt=""
+                    class="accIcon"
+                  />
+                  Sign Out
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bg -->
+    <!-- <div class="bg"></div> -->
+
+    <!-- Content -->
+    <div class="option" id="roomBar">
+      <ul>
+        <li><a href="#scroll">Overview</a></li>
+        <li><a id="hig">Highlights</a></li>
+        <li><a id="roo">Rooms</a></li>
+        <li><a id="boo">Booking</a></li>
+        <li><a id="rev">Review</a></li>
+        <li><a id="pro">Property policies</a></li>
+      </ul>
+    </div>
+    <div class="contCtn">
+      <div class="overview">
+        <div id="ovInfo"></div>
+        <div class="imgCtn">
+          <img src="/JSI01/SPCK/MAINPIC/hotel.JPG" alt="" class="hotelImg" />
+          <div class="imgRight">
+            <img src="/JSI01/SPCK/MAINPIC/r12.jpg" alt="" />
+            <img src="/JSI01/SPCK/MAINPIC/r21.jpg" alt="" />
+            <img src="/JSI01/SPCK/MAINPIC/r22.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="highlight contEle">
+        <h2>Highlights</h2>
+        <div class="higCtn">
+          <div class="higTop">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15743758.251549793!2d95.22374875212326!3d15.554688105934797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31157a4d736a1e5f%3A0xb03bb0c9e2fe62be!2zVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1691179110480!5m2!1svi!2s"
+              width="700"
+              height="420"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="titCtn">
+              <div>B</div>
+              <div>e</div>
+              <div>s</div>
+              <div>t</div>
+              <div>&nbsp;</div>
+              <!-- This is a space -->
+              <div>L</div>
+              <div>o</div>
+              <div>c</div>
+              <div>a</div>
+              <div>t</div>
+              <div>e</div>
+              <div>d</div>
+            </div>
+          </div>
+          <div class="higBot">
+            <div class="titCtn">
+              <div>B</div>
+              <div>e</div>
+              <div>s</div>
+              <div>t</div>
+              <span>&nbsp;</span>
+              <span>F</span>
+              <span>a</span>
+              <span>c</span>
+              <span>i</span>
+              <span>l</span>
+              <span>i</span>
+              <span>t</span>
+              <span>y</span>
+            </div>
+            <div class="list-modal">
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/phong-tu-quan-ao_1652072324.svg"
+                  alt="Wardrobe"
+                />
+                Wardrobe
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/bed--v1_1678159161.png"
+                  alt="Bed sheets, pillows"
+                />
+                Bed sheets, pillows
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/phong-khong-hut-thuoc_1652071396.svg"
+                  alt="Non-Smoking Room"
+                />
+                Non-Smoking Room
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/voi-sen_1652071317.svg"
+                  alt="Shower"
+                />
+                Shower
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/bar_1652072189.svg"
+                  alt="Mini bar"
+                />
+                Mini bar
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/truy-cap-interner-qua-day-mang_1652071491.svg"
+                  alt="Internet access via network wire"
+                />
+                Internet access via network wire
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/air-conditioner_1678159218.png"
+                  alt="Air conditioning"
+                />
+                Air conditioning
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/phong-tam-voi-sen_1652071650.svg"
+                  alt="Bathroom - shower"
+                />
+                Bathroom - shower
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/may-say-toc_1652071570.svg"
+                  alt="Hair dryer"
+                />
+                Hair dryer
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/phong-co-bon-tam_1652071850.svg"
+                  alt="Room with bathtub"
+                />
+                Room with bathtub
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/ket-an-toan_1652071524.svg"
+                  alt="In-room safe"
+                />
+                In-room safe
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/truy-cap-internet-qua-wifi_1652071465.svg"
+                  alt="Internet WiFi access in room"
+                />
+                Internet WiFi access in room
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/mirror_1652071096.svg"
+                  alt="Bathroom items"
+                />
+                Bathroom items
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/towel_1678158562.png"
+                  alt="Towels provided"
+                />
+                Towels provided
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/1_1652071121.svg"
+                  alt="Telephone"
+                />
+                Telephone
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/den-ban_1652071215.svg"
+                  alt="Lamp"
+                />
+                Lamp
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/truyen-hinh-cap-ve-tinh_1652071255.svg"
+                  alt="TV – cable/satellite"
+                />
+                TV – cable/satellite
+              </div>
+              <div class="item-service-modal">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2022/05/original/vector_1652071017.svg"
+                  alt="Work desk"
+                />
+                Work desk
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rooms contEle">
+        <h2>Rooms</h2>
+        <div class="toroom">
+          <h2 class="torTit">Luxury Double Bed Room</h2>
+          <div class="preInfo">
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M2 14v-1.333A2.667 2.667 0 014.667 10h2.666A2.667 2.667 0 0110 12.667V14m.667-11.913a2.667 2.667 0 010 5.166M14 14v-1.333a2.667 2.667 0 00-2-2.567M8.667 4.667a2.667 2.667 0 11-5.334 0 2.667 2.667 0 015.334 0z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Guests
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2z"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                ></path>
+                <path
+                  d="M11.333 11.333L5 5M11.334 8.333v3h-3M4.667 7.667v-3h3"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              45m<sup>2</sup>
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M8 9.333a1.333 1.333 0 100-2.666 1.333 1.333 0 000 2.666z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.667 8c-1.778 3.111-4 4.667-6.667 4.667S3.11 11.11 1.333 8c1.778-3.111 4-4.667 6.667-4.667S12.889 4.89 14.667 8z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              City View
+            </div>
+          </div>
+          <div class="torInCtn">
+            <div class="torIn">
+              <div class="torInEle torNon">
+                <svg width="16" height="16" fill="none">
+                  <path
+                    d="M13.444 6.111H5.667c-.86 0-1.556.696-1.556 1.556v4.666c0 .86.697 1.556 1.556 1.556h7.777c.86 0 1.556-.697 1.556-1.556V7.667c0-.86-.697-1.556-1.556-1.556z"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.556 11.555a1.556 1.556 0 100-3.11 1.556 1.556 0 000 3.11zM11.889 6.111V4.556A1.556 1.556 0 0010.333 3H2.556A1.556 1.556 0 001 4.556v4.666a1.555 1.555 0 001.556 1.556H4.11"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Non-refundable
+              </div>
+              <div class="torInEle torBr">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll jss889"
+                >
+                  <path
+                    d="M11.31 11.976l1.862 1.862M3.241 3.908l4.966 4.965M4.483 2.667L7.586 5.77 5.103 8.253 2 5.149M3.241 13.838l10.552-10.55a5.036 5.036 0 01-1.242 4.965c-2.194 2.194-3.724 2.482-3.724 2.482"
+                    stroke="#48BB78"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Free Breakfast
+              </div>
+              <div class="torInEle torGen">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll"
+                  style="stroke: rgb(255, 51, 102)"
+                >
+                  <path
+                    d="M3.333 8l3.334 3.333 6.666-6.666"
+                    stroke="#48BB78"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Generate invoices
+              </div>
+              <div class="torInEle torFa">
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  style="width: 16px; height: 16px"
+                >
+                  <path
+                    d="M10 17.5a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM10 6.667h.008"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.167 10H10v3.333h.833"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Full Facilities
+              </div>
+              <div class="torInEle torBed">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/bed--v1_1678159161.png"
+                  alt="Bed sheets, pillows"
+                />
+                1 Double Bed
+              </div>
+
+              <div class="torInEle torPrice">
+                <i class="fa-solid fa-money-bill"></i>
+                Price: <span id="p12"></span>
+              </div>
+            </div>
+            <img class="torImg" src="/JSI01/SPCK/MAINPIC/r12.jpg" alt="" />
+          </div>
+          <div class="torInEle">
+            <span class="note"> </span>
+          </div>
+        </div>
+        <div class="toroom">
+          <h2 class="torTit">Luxury Two Single Bed Room</h2>
+          <div class="preInfo">
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M2 14v-1.333A2.667 2.667 0 014.667 10h2.666A2.667 2.667 0 0110 12.667V14m.667-11.913a2.667 2.667 0 010 5.166M14 14v-1.333a2.667 2.667 0 00-2-2.567M8.667 4.667a2.667 2.667 0 11-5.334 0 2.667 2.667 0 015.334 0z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              2 Guests
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2z"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                ></path>
+                <path
+                  d="M11.333 11.333L5 5M11.334 8.333v3h-3M4.667 7.667v-3h3"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              45m<sup>2</sup>
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M8 9.333a1.333 1.333 0 100-2.666 1.333 1.333 0 000 2.666z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.667 8c-1.778 3.111-4 4.667-6.667 4.667S3.11 11.11 1.333 8c1.778-3.111 4-4.667 6.667-4.667S12.889 4.89 14.667 8z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              City View
+            </div>
+          </div>
+          <div class="torInCtn">
+            <div class="torIn">
+              <div class="torInEle torNon">
+                <svg width="16" height="16" fill="none">
+                  <path
+                    d="M13.444 6.111H5.667c-.86 0-1.556.696-1.556 1.556v4.666c0 .86.697 1.556 1.556 1.556h7.777c.86 0 1.556-.697 1.556-1.556V7.667c0-.86-.697-1.556-1.556-1.556z"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.556 11.555a1.556 1.556 0 100-3.11 1.556 1.556 0 000 3.11zM11.889 6.111V4.556A1.556 1.556 0 0010.333 3H2.556A1.556 1.556 0 001 4.556v4.666a1.555 1.555 0 001.556 1.556H4.11"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Non-refundable
+              </div>
+              <div class="torInEle torBr">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll jss889"
+                >
+                  <path
+                    d="M11.31 11.976l1.862 1.862M3.241 3.908l4.966 4.965M4.483 2.667L7.586 5.77 5.103 8.253 2 5.149M3.241 13.838l10.552-10.55a5.036 5.036 0 01-1.242 4.965c-2.194 2.194-3.724 2.482-3.724 2.482"
+                    stroke="#48BB78"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Free Breakfast
+              </div>
+              <div class="torInEle torGen">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll"
+                  style="stroke: rgb(255, 51, 102)"
+                >
+                  <path
+                    d="M3.333 8l3.334 3.333 6.666-6.666"
+                    stroke="#48BB78"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Generate invoices
+              </div>
+              <div class="torInEle torFa">
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  style="width: 16px; height: 16px"
+                >
+                  <path
+                    d="M10 17.5a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM10 6.667h.008"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.167 10H10v3.333h.833"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Full Facilities
+              </div>
+              <div class="torInEle torBed">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/bed--v1_1678159161.png"
+                  alt="Bed sheets, pillows"
+                />
+                2 Single Beds
+              </div>
+
+              <div class="torInEle torPrice">
+                <i class="fa-solid fa-money-bill"></i>
+                Price: <span id="p21"></span>
+              </div>
+            </div>
+            <img class="torImg" src="/JSI01/SPCK/MAINPIC/r21.jpg" alt="" />
+          </div>
+          <div class="torInEle">
+            <span class="note"> </span>
+          </div>
+        </div>
+        <div class="toroom">
+          <h2 class="torTit">Luxury Three Single Bed Room</h2>
+          <div class="preInfo">
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M2 14v-1.333A2.667 2.667 0 014.667 10h2.666A2.667 2.667 0 0110 12.667V14m.667-11.913a2.667 2.667 0 010 5.166M14 14v-1.333a2.667 2.667 0 00-2-2.567M8.667 4.667a2.667 2.667 0 11-5.334 0 2.667 2.667 0 015.334 0z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              3 Guests
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2z"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                ></path>
+                <path
+                  d="M11.333 11.333L5 5M11.334 8.333v3h-3M4.667 7.667v-3h3"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              45m<sup>2</sup>
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M8 9.333a1.333 1.333 0 100-2.666 1.333 1.333 0 000 2.666z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.667 8c-1.778 3.111-4 4.667-6.667 4.667S3.11 11.11 1.333 8c1.778-3.111 4-4.667 6.667-4.667S12.889 4.89 14.667 8z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              City View
+            </div>
+          </div>
+          <div class="torInCtn">
+            <div class="torIn">
+              <div class="torInEle torNon">
+                <svg width="16" height="16" fill="none">
+                  <path
+                    d="M13.444 6.111H5.667c-.86 0-1.556.696-1.556 1.556v4.666c0 .86.697 1.556 1.556 1.556h7.777c.86 0 1.556-.697 1.556-1.556V7.667c0-.86-.697-1.556-1.556-1.556z"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.556 11.555a1.556 1.556 0 100-3.11 1.556 1.556 0 000 3.11zM11.889 6.111V4.556A1.556 1.556 0 0010.333 3H2.556A1.556 1.556 0 001 4.556v4.666a1.555 1.555 0 001.556 1.556H4.11"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Non-refundable
+              </div>
+              <div class="torInEle torBr">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll jss889"
+                >
+                  <path
+                    d="M11.31 11.976l1.862 1.862M3.241 3.908l4.966 4.965M4.483 2.667L7.586 5.77 5.103 8.253 2 5.149M3.241 13.838l10.552-10.55a5.036 5.036 0 01-1.242 4.965c-2.194 2.194-3.724 2.482-3.724 2.482"
+                    stroke="#48BB78"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Free Breakfast
+              </div>
+              <div class="torInEle torGen">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll"
+                  style="stroke: rgb(255, 51, 102)"
+                >
+                  <path
+                    d="M3.333 8l3.334 3.333 6.666-6.666"
+                    stroke="#48BB78"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Generate invoices
+              </div>
+              <div class="torInEle torFa">
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  style="width: 16px; height: 16px"
+                >
+                  <path
+                    d="M10 17.5a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM10 6.667h.008"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.167 10H10v3.333h.833"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Full Facilities
+              </div>
+              <div class="torInEle torBed">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/bed--v1_1678159161.png"
+                  alt="Bed sheets, pillows"
+                />
+                3 Single Beds
+              </div>
+
+              <div class="torInEle torPrice">
+                <i class="fa-solid fa-money-bill"></i>
+                Price: <span id="p31"></span>
+              </div>
+            </div>
+            <img class="torImg" src="/JSI01/SPCK/MAINPIC/r31.jpg" alt="" />
+          </div>
+          <div class="torInEle">
+            <span class="note"> </span>
+          </div>
+        </div>
+        <div class="toroom">
+          <h2 class="torTit">Luxury Two Double Bed Room</h2>
+          <div class="preInfo">
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M2 14v-1.333A2.667 2.667 0 014.667 10h2.666A2.667 2.667 0 0110 12.667V14m.667-11.913a2.667 2.667 0 010 5.166M14 14v-1.333a2.667 2.667 0 00-2-2.567M8.667 4.667a2.667 2.667 0 11-5.334 0 2.667 2.667 0 015.334 0z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              4 Guests
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2z"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                ></path>
+                <path
+                  d="M11.333 11.333L5 5M11.334 8.333v3h-3M4.667 7.667v-3h3"
+                  stroke="#4A5568"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              45m<sup>2</sup>
+            </div>
+            <div class="preEle">
+              <svg width="16" height="16" fill="none">
+                <path
+                  d="M8 9.333a1.333 1.333 0 100-2.666 1.333 1.333 0 000 2.666z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M14.667 8c-1.778 3.111-4 4.667-6.667 4.667S3.11 11.11 1.333 8c1.778-3.111 4-4.667 6.667-4.667S12.889 4.89 14.667 8z"
+                  stroke="#4A5568"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              City View
+            </div>
+          </div>
+          <div class="torInCtn">
+            <div class="torIn">
+              <div class="torInEle torNon">
+                <svg width="16" height="16" fill="none">
+                  <path
+                    d="M13.444 6.111H5.667c-.86 0-1.556.696-1.556 1.556v4.666c0 .86.697 1.556 1.556 1.556h7.777c.86 0 1.556-.697 1.556-1.556V7.667c0-.86-.697-1.556-1.556-1.556z"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.556 11.555a1.556 1.556 0 100-3.11 1.556 1.556 0 000 3.11zM11.889 6.111V4.556A1.556 1.556 0 0010.333 3H2.556A1.556 1.556 0 001 4.556v4.666a1.555 1.555 0 001.556 1.556H4.11"
+                    stroke="#4A5568"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Non-refundable
+              </div>
+              <div class="torInEle torBr">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll jss889"
+                >
+                  <path
+                    d="M11.31 11.976l1.862 1.862M3.241 3.908l4.966 4.965M4.483 2.667L7.586 5.77 5.103 8.253 2 5.149M3.241 13.838l10.552-10.55a5.036 5.036 0 01-1.242 4.965c-2.194 2.194-3.724 2.482-3.724 2.482"
+                    stroke="#48BB78"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Free Breakfast
+              </div>
+              <div class="torInEle torGen">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  class="svgFillAll"
+                  style="stroke: rgb(255, 51, 102)"
+                >
+                  <path
+                    d="M3.333 8l3.334 3.333 6.666-6.666"
+                    stroke="#48BB78"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Generate invoices
+              </div>
+              <div class="torInEle torFa">
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  style="width: 16px; height: 16px"
+                >
+                  <path
+                    d="M10 17.5a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM10 6.667h.008"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M9.167 10H10v3.333h.833"
+                    stroke="#4A5568"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+                Full Facilities
+              </div>
+              <div class="torInEle torBed">
+                <img
+                  width="20"
+                  height="20"
+                  src="https://booking.muongthanh.com/images/rooms/service/2023/03/original/bed--v1_1678159161.png"
+                  alt="Bed sheets, pillows"
+                />
+                2 Double Beds
+              </div>
+
+              <div class="torInEle torPrice">
+                <i class="fa-solid fa-money-bill"></i>
+                Price: <span id="p22"></span>
+              </div>
+            </div>
+            <img class="torImg" src="/JSI01/SPCK/MAINPIC/r22.jpg" alt="" />
+          </div>
+          <div class="torInEle">
+            <span class="note"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="booking contEle">
+        <h2>Booking</h2>
+        <div class="dateFil">
+          <div class="ioCtn">
+            <div class="iCtn">
+              <p>Check-in</p>
+              <input type="date" name="" id="checkIn" class="ipdate" />
+            </div>
+            <div class="oCtn">
+              <p>Check-out</p>
+              <input type="date" name="" id="checkOut" class="ipdate" />
+            </div>
+            <div class="butCtn">
+              <button id="searchBtn">Select</button>
+            </div>
+          </div>
+        </div>
+        <div id="roomCtn">
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+          <div class="floorCtn">
+            <h3 class="floorName"></h3>
+            <div class="floorRoom">
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+              <div class="room"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review contEle">
+        <h2>Review</h2>
+        <h3>Rating:</h3>
+        <div class="inpCtn">
+          <input type="text" name="" id="rateTit" placeholder="Rate Title" />
+          <div class="rate">
+            <h3>Rate:</h3>
+            <input
+              type="range"
+              name=""
+              id="rateRange"
+              min="0"
+              max="10"
+              step="0.5"
+              value="0"
+            />
+            <span id="ratePoint">0</span>
+          </div>
+          <textarea name="" id="rateCmt" cols="30" rows="4"></textarea>
+          <button id="sentBtn">
+            <i class="fa-regular fa-paper-plane" style="color: #000000"></i>
+          </button>
+        </div>
+        <!-- <h3>Other Rating:</h3> -->
+      </div>
+      <div class="policy contEle">
+        <h2>Property policies</h2>
+        <div class="inoutCtn">
+          <div class="inCtn">
+            <p>Check-in</p>
+            <h4>From 14:00</h4>
+          </div>
+          <div class="outCtn">
+            <p>Check-out</p>
+            <h4>Before 12:00</h4>
+          </div>
+        </div>
+        <div class="child">
+          <h3>Children Policy</h3>
+          <ul>
+            <li>Children from 11 years old will be considered as adults</li>
+            <li>
+              Please note the correct number of guests so that no additional
+              fees will be charged upon check-in
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bookInfo" id="bookin">
+        <h3 class="bookTit">Booking Information</h3>
+        <div class="bookPlace">
+          <h4><span id="hotel"></span></h4>
+          <p id="bookTime"></p>
+        </div>
+        <h4>Room Information</h4>
+        <div id="roomInCtn"></div>
+        <div class="disCtn">
+          <h4>Discount:</h4>
+          <input type="text" id="inpDis" placeholder="Input promotion code" />
+        </div>
+        <div class="priceCtn">
+          <h4>Price:</h4>
+          <span id="lastP"></span>
+        </div>
+        <button id="bookBtn">Book</button>
+      </div>
+    </div>
+
+    <!-- Bot -->
+    <div class="botCt" id="ct">
+      <div class="ctCtn">
+        <div class="ct" id="address">
+          <h2 class="botTit">
+            <img src="/JSI01/SPCK/logo.png" class="anhLogo" alt="" />
+          </h2>
+          <p>Milky Way galaxy, Solar System,</p>
+          <p>Earth, Vietnam, Your heart</p>
+          <p>+84 886 750 015</p>
+          <p>Goat@gmail.com</p>
+        </div>
+        <div class="ct" id="place">
+          <h2 class="botTit">Popular Destination</h2>
+          <p>Internet Cafe</p>
+          <p>Your School</p>
+          <p>Your House</p>
+          <p>Food Stall</p>
+        </div>
+        <div class="ct" id="follow">
+          <h2 class="botTit">Follow Us On</h2>
+          <p>Instagram <i class="fa-brands fa-instagram"></i></p>
+          <p>Facebook <i class="fa-brands fa-facebook"></i></p>
+          <p>Youtube <i class="fa-brands fa-youtube"></i></p>
+          <p>Twitter <i class="fa-brands fa-square-twitter"></i></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <hr />
+        <h5 id="cpr">
+          Copyright ©2023 All rights reserved | This Shhi... is made with
+          <i class="fa-regular fa-heart" style="color: #000000"></i> by Goat
+        </h5>
+      </div>
+    </div>
+
+    <!-- Up to top -->
+    <div id="scroll"></div>
+    <div class="up">
+      <a href="#scroll"><img id="up" src="/JSA16/SPCK/Icon/up.png" alt="" /></a>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script type="module" src="/JSI01/SPCK/JAVALORANT/room.js"></script>
+  </body>
+</html>

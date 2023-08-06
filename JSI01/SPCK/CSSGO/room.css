@@ -1,0 +1,643 @@
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lemonada";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.bg {
+  background-color: #f4f8fa;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+/*  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 2.5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(96, 92, 95, 0.8);
+  border-radius: 2.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(96, 92, 95);
+}
+/*  */
+
+/*  */
+/* Thanh menu */
+/*  */
+/* Code chung */
+.topMenu {
+  width: 100%;
+  height: 64px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: white;
+}
+.menuCtn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.leftCtn,
+.rightCtn {
+  display: flex;
+}
+/* Logo */
+.anhLogo {
+  height: 64px;
+}
+/* Các mục */
+.option {
+  width: 40%;
+  font-size: 18px;
+  margin-left: 3%;
+}
+.option ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.option li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #26bed6;
+}
+.option li:hover {
+  border-bottom: solid 2px #26bed6;
+}
+li:hover {
+  cursor: pointer;
+}
+
+/* Noti */
+.rightCtn {
+  height: calc(100% - 16px);
+  width: 18%;
+  display: flex;
+  justify-content: space-around;
+}
+#userImg,
+.notiImg {
+  height: 36px;
+}
+.account {
+  width: 115px;
+  position: relative;
+}
+#account {
+  width: 100%;
+}
+#account,
+.noti {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accFeature {
+  position: absolute;
+  top: 55px;
+  right: -20px;
+  background-color: white;
+  width: 250px;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px 2px rgb(64 60 67 / 16%);
+  border: 1px solid #f2f2f2;
+  padding: 7px 10px 7px 10px;
+  display: none;
+}
+.accIcon {
+  height: 30px;
+  margin-right: 7px;
+}
+.accCtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(242, 242, 242, 0.2);
+  padding: 7px;
+  border-radius: 7px;
+  margin: 3px 0 3px 0;
+}
+.accCtn:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.account:hover .accFeature {
+  display: block;
+}
+#accLog {
+  display: none;
+}
+
+/*  */
+/* Content */
+/*  */
+#roomBar {
+  width: 100%;
+  height: 48px;
+  box-shadow: 0 5px 5px rgb(64 60 67 / 16%);
+  position: fixed;
+  top: 64px;
+  margin: 0;
+  background-color: white;
+  z-index: 7;
+  border-top: solid 1px #f4f8fa;
+  padding: 0 0 0 20.1%;
+  font-size: 16px;
+  display: none;
+}
+#roomBar ul {
+  justify-content: flex-start;
+}
+
+/* Ctctn */
+.contCtn {
+  width: 80%;
+  margin: 112px 10% 0 10%;
+  position: relative;
+}
+.hotelInfo {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+}
+.hotelName {
+  font-size: 24px;
+}
+.hotelStar {
+  font-size: 18px;
+}
+.hotelTag {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.tag {
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 0 7px;
+}
+.freeB,
+.freeW,
+.insCf {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 10px;
+}
+.freeB {
+  color: #48bb78;
+}
+.insCf {
+  color: #ed8936;
+}
+.rating {
+  background-color: rgb(38, 190, 214, 0.4);
+  color: #26bed6;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#ovInfo {
+  position: relative;
+}
+.ovRCtn {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  right: 5px;
+  bottom: 0px;
+}
+.priceCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-right: 10px;
+}
+.priceCtn p {
+  font-size: 17px;
+}
+#select {
+  height: 50px;
+  width: 180px;
+  color: white;
+  background-color: #26bed6;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  font-family: "Lemonada";
+  font-size: 18px;
+}
+
+.imgCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.hotelImg {
+  width: 70.2%;
+  height: fit-content;
+  border-radius: 7px;
+}
+.imgRight {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imgRight img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contEle {
+  margin-top: 40px;
+  width: 70.2%;
+}
+/*  */
+.higTop,
+.higBot {
+  margin: 13px 0 23px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.titCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed8936;
+  color: white;
+  border-radius: 30px 10px 30px 10px;
+  padding: 10px 17px;
+}
+.titCtn div,
+.titCtn span {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+}
+.list-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  line-height: normal;
+  background-color: rgb(38, 190, 214, 0.4);
+  padding: 10px 17px;
+  border-radius: 7px;
+}
+/*  */
+.toroom {
+  width: 100%;
+  height: fit-content;
+  border: 0.5px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 13px 23px;
+  margin: 13px 0 23px 0;
+}
+.preInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.preEle {
+  margin-right: 10px;
+}
+.torInCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 5px;
+  padding: 10px 7px 3px 7px;
+  border-top: 0.5px solid grey;
+}
+.torImg {
+  width: 55%;
+  height: fit-content;
+}
+.torBr {
+  color: #48bb78;
+}
+.torGen {
+  color: rgb(255, 51, 102);
+}
+.svgFillAll {
+  color: rgb(255, 51, 102);
+}
+svg {
+  width: 16px;
+}
+
+/*  */
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid;
+  border-radius: 5px;
+  width: 19.4%;
+  margin-bottom: 7px;
+  user-select: none;
+  cursor: pointer;
+  background-color: white;
+}
+.room:hover {
+  background-color: rgb(72, 187, 120, 0.8);
+}
+.floorRoom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ipdate {
+  font-family: "Lemonada";
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+}
+.ipdate:focus {
+  outline: none;
+  background-color: rgb(38, 190, 214, 0.4);
+}
+#searchBtn {
+  width: 90px;
+  height: 70%;
+  background-color: #26bed6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Lemonada";
+}
+.butCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  border-left: 1px solid #e0e0e0;
+}
+.ioCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  height: 70px;
+}
+.iCtn,
+.oCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  border-left: 1px solid #e0e0e0;
+  width: 37%;
+  height: 100%;
+}
+/*  */
+.inpCtn {
+  display: flex;
+  width: 75%;
+  height: fit-content;
+  flex-direction: column;
+  position: relative;
+}
+.rate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#rateRange {
+  width: 75%;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  background: rgba(183, 138, 40, 0.2);
+  outline: 0;
+}
+#rateTit {
+  padding: 3px 0 7px 17px;
+  font-family: "Lemonada";
+  border-radius: 7px;
+  font-size: 16px;
+}
+#rateCmt {
+  padding: 3px 0 7px 17px;
+  font-family: "Lemonada";
+  border-radius: 7px;
+  font-size: 14px;
+  max-width: 100%;
+  min-width: 100%;
+}
+#sentBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 0 1px 1px 0;
+  background-color: #26bed6;
+  cursor: pointer;
+}
+
+/*  */
+.bookInfo {
+  position: absolute;
+  top: 810px;
+  right: 0;
+  width: 28%;
+  border: 0.5px solid;
+  border-radius: 10px;
+  padding: 10px 17px;
+}
+.bookIf {
+  position: fixed;
+  top: 122px;
+  right: 10%;
+  width: 22.4%;
+  border: 0.5px solid;
+  border-radius: 10px;
+  padding: 10px 17px;
+}
+.bookPlace {
+  border-top: 1px solid;
+  border-bottom: 1px dotted;
+}
+#inpDis {
+  width: 100%;
+  font-family: "Lemonada";
+  border-radius: 7px;
+  padding: 0 0 2px 10px;
+}
+.disCtn {
+  border-bottom: 1px solid;
+  border-top: 1px dotted;
+  padding: 0 0 7px 0;
+}
+#bookBtn {
+  width: 100%;
+  font-family: "Lemonada";
+  color: white;
+  font-weight: bold;
+  padding: 3px 0 7px 0;
+  background-color: #26bed6;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#roomInCtn {
+  overflow: scroll;
+  background-color: #26bed6;
+  overflow-x: hidden;
+  max-height: 170px;
+  margin-bottom: 7px;
+}
+
+/*  */
+.inoutCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  height: 70px;
+}
+.inCtn,
+.outCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  border-left: 1px solid #e0e0e0;
+  width: 45%;
+  height: 100%;
+}
+
+/*  */
+/* Up to top */
+/*  */
+#scroll {
+  position: absolute;
+  top: 0;
+}
+.up {
+  position: fixed;
+  bottom: 50px;
+  right: 5px;
+  width: 60px;
+}
+#up {
+  width: 100%;
+}
+
+/*  */
+/* Contacts */
+/*  */
+.botCt {
+  background-image: url(/JSA16/SPCK/bgct.png);
+  padding: 0 10%;
+  width: 100%;
+  margin-top: 90px;
+}
+.ctCtn {
+  padding: 113px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.botTit {
+  margin-bottom: 25px;
+}
+.ct p {
+  font-size: 20px;
+}
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#place p,
+#follow p {
+  padding: 7px 0;
+}
+#cpr {
+  text-align: center;
+  padding: 25px 0;
+}

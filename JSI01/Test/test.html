@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input type="date" id="date1" />
+    <input type="date" id="date2" />
+    <button onclick="compareDates()">Compare Dates</button>
+    <script>
+      function compareDates() {
+        // Get the input values
+        var date1 = document.getElementById("date1").value;
+        var date2 = document.getElementById("date2").value;
+
+        // Convert the values to Date objects
+        var d1 = new Date(date1);
+        var d2 = new Date(date2);
+
+        // Compare the dates
+        if (d1 > d2) {
+          alert("Date1 is later than Date2");
+        } else if (d1 < d2) {
+          alert("Date1 is earlier than Date2");
+        } else if (d1.getTime() === d2.getTime()) {
+          alert("Both dates are equal");
+        } else {
+          alert("Invalid dates");
+        }
+      }
+    </script> -->
+    <h2>Calculate the distance between two dates</h2>
+
+    <form id="dateForm">
+      <label for="date1">Date 1:</label><br />
+      <input type="date" id="date1" name="date1" /><br />
+      <label for="date2">Date 2:</label><br />
+      <input type="date" id="date2" name="date2" /><br />
+      <input type="button" value="Calculate" onclick="calculateDays()" />
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+      function calculateDays() {
+        var date1 = new Date(document.getElementById("date1").value);
+        var date2 = new Date(document.getElementById("date2").value);
+
+        if (isNaN(date1.getTime()) || isNaN(date2.getTime())) {
+          document.getElementById("result").innerHTML =
+            "Invalid date format. Please enter a valid date.";
+        } else {
+          var diffTime = Math.abs(date2 - date1);
+          var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+          document.getElementById("result").innerHTML =
+            "The distance between the two dates is " + diffDays + " days.";
+        }
+      }
+    </script>
+  </body>
+</html>

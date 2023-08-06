@@ -1,0 +1,282 @@
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lemonada";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.bg {
+  background-color: #f4f8fa;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+/*  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 2.5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(96, 92, 95, 0.8);
+  border-radius: 2.5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(96, 92, 95);
+}
+/*  */
+
+/*  */
+/* Thanh menu */
+/*  */
+/* Code chung */
+.topMenu {
+  width: 100%;
+  height: 64px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: white;
+}
+.menuCtn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.leftCtn,
+.rightCtn {
+  display: flex;
+}
+/* Logo */
+.anhLogo {
+  height: 64px;
+}
+/* Các mục */
+.option {
+  width: 40%;
+  font-size: 18px;
+  margin-left: 3%;
+}
+.option ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.option li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #26bed6;
+}
+.option li:hover {
+  border-bottom: solid 2px #26bed6;
+}
+li:hover {
+  cursor: pointer;
+}
+
+/* Noti */
+.rightCtn {
+  height: calc(100% - 16px);
+  width: 18%;
+  display: flex;
+  justify-content: space-around;
+}
+#userImg,
+.notiImg {
+  height: 36px;
+}
+.account {
+  width: 115px;
+  position: relative;
+}
+#account {
+  width: 100%;
+}
+#account,
+.noti {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accFeature {
+  position: absolute;
+  top: 55px;
+  right: -20px;
+  background-color: white;
+  width: 250px;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px 2px rgb(64 60 67 / 16%);
+  border: 1px solid #f2f2f2;
+  padding: 7px 10px 7px 10px;
+  display: none;
+}
+.accIcon {
+  height: 30px;
+  margin-right: 7px;
+}
+.accCtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(242, 242, 242, 0.2);
+  padding: 7px;
+  border-radius: 7px;
+  margin: 3px 0 3px 0;
+}
+.accCtn:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.account:hover .accFeature {
+  display: block;
+}
+#accLog {
+  display: none;
+}
+
+/*  */
+/* Content */
+/*  */
+.travelGuide {
+  width: 100%;
+  height: 560px;
+  margin-top: 64px;
+  background-color: #26bed6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tvTit {
+  font-size: 144px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.tvLeft {
+  margin: 27px 0 3px 10%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+.tvLTit {
+  font-size: 28px;
+}
+.anhao {
+  width: 100%;
+  height: 400px;
+  background-color: #26bed6;
+}
+.tvRight {
+  display: inline-block;
+  margin: 115px 0 0 5%;
+  padding: 15px;
+  width: 25%;
+  position: sticky;
+  left: 65%;
+  top: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+.tip {
+  padding-top: 64px;
+}
+
+/*  */
+/* Up to top */
+/*  */
+#scroll {
+  position: absolute;
+  top: 0;
+}
+.up {
+  position: fixed;
+  bottom: 50px;
+  right: 5px;
+  width: 60px;
+}
+#up {
+  width: 100%;
+}
+
+/*  */
+/* Contacts */
+/*  */
+.botCt {
+  background-image: url(/JSA16/SPCK/bgct.png);
+  padding: 0 10%;
+  width: 100%;
+  margin-top: 90px;
+}
+.ctCtn {
+  padding: 113px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.botTit {
+  margin-bottom: 25px;
+}
+.ct p {
+  font-size: 20px;
+}
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#place p,
+#follow p {
+  padding: 7px 0;
+}
+#cpr {
+  text-align: center;
+  padding: 25px 0;
+}

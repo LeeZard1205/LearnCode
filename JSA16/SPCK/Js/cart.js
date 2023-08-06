@@ -216,7 +216,7 @@ let s = 0;
 for (let i = 0; i < payPro.length; i++) {
   s += Number(buyPro[payPro[i]].pnum) * Number(cost[i].innerHTML) * 1000;
 }
-subTot.innerHTML = String(s).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+subTot.innerHTML = String(s);
 vat.innerHTML = String(s * 0.1).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 if (check == 1) {
   discount.innerHTML = String(s * 0.05).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
